@@ -6,9 +6,9 @@
   "private": true,
   "license": "GPL",
   "scripts": {
-    "dev": "cross-env NODE_ENV=online node build/dev-server.js",
+    "dev": "node init && cross-env NODE_ENV=online node build/dev-server.js",
     "local": "cross-env NODE_ENV=local node build/dev-server.js",
-    "build": "node build/build.js"
+    "build": "node init && node build/build.js"
   },
   "dependencies": {
     "better-scroll": "1.15.2",
